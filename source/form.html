@@ -39,8 +39,98 @@
     </div>
   </header>
   <main class="main-page">
-    <h1 class="visually-hidden">Cервис PINK - взгляни на мир по-новому!</h1>
-
+    <div class="main-page__wrapper offer">
+      <h1 class="visually-hidden">Cервис PINK - взгляни на мир по-новому!</h1>
+      <p class="offer__content">Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!</p>
+    </div>
+    <form class="form-content" method="post" action="https://echo.htmlacademy.ru">
+      <div class="form-content__full-name">
+        <label class="form-content__surname" for="surname">фамилия:</label>
+        <input class="form-content__input-surname" type="text" id="surname" name="surname"
+          placeholder="Укажите фамилию *">
+        <label class="form-content__name" for="name">имя:</label>
+        <input class="form-content__input-name" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+        <label class="form-content__patronymic" for="patronymic">отчество:</label>
+        <input class="form-content__patronymic" type="text" id="patronymic" name="patronymic"
+          placeholder="Ну и отчество тоже">
+      </div>
+      <div class="form-content__travel">
+        <fieldset class="form-content__crazy-travel">
+          <legend class="form-content__crazy-legend">Ваши безбашенные
+            достижения в путешествии</legend>
+          <ul class="form-content__crazy-list">
+            <li class="form-content__crazy-item crazy-checkbox">
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-shark"
+                id="shark" type="checkbox" checked>
+              <label for="shark" class="crazy-checkbox__label">Сделал селфи с акулой</label>
+            </li>
+            <li class="form-content__crazy-item crazy-checkbox">
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-beach"
+                id="beach" type="checkbox" checked>
+              <label for="beach" class="crazy-checkbox__label">Обгорел на пляже</label>
+            </li>
+            <li class="form-content__crazy-item crazy-checkbox">
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-chuck"
+                id="chuck" type="checkbox">
+              <label for="chuck" class="crazy-checkbox__label">Видел Чака Норриса</label>
+            </li>
+            <li class="form-content__crazy-item crazy-checkbox">
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-souvenir"
+                id="souvenir" type="checkbox">
+              <label for="souvenir" class="crazy-checkbox__label">Накупил сувениров</label>
+            </li>
+            <li class="form-content__crazy-item crazy-checkbox">
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-tower"
+                id="tower" type="checkbox" checked>
+              <label for="tower" class="crazy-checkbox__label">Удержал башню</label>
+            </li>
+            <li class="form-content__crazy-item crazy-checkbox">
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-hotel"
+                id="hotel" type="checkbox">
+              <label for="hotel" class="crazy-checkbox__label">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form-content__data">
+        <label class="form-content__phone" for="phone">номер телефона</label>
+        <input class="form-content__input-phone" type="text" id="phone" name="number-phone"
+          placeholder="Номер, пожалуйста">
+        <label class="form-content__mail" for="mail">адрес почты</label>
+        <input class="form-content__input-mail" type="text" id="mail" name="address-mail" placeholder="Введите почту *">
+      </div>
+      <div class="form-content__attachment">
+        <fieldset class="form-content__attachment-travel">
+          <legend class="form-content__attachment-legend">с каким приложением путешествовали?</legend>
+          <ul class="form-content__attachment-list">
+            <li class="form-content__attachment-item attachment-radio">
+              <input class="visuallu-hidden attachment-radio__input attachment-radio__input--state"
+                name="attachment-travel" id="ios" type="radio" checked>
+              <label class="attachment-radio__label" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form-content__attachment-item attachment-radio">
+              <input class="visuallu-hidden attachment-radio__input attachment-radio__input--state"
+                name="attachment-travel" id="android" type="radio">
+              <label class="attachment-radio__label" for="android">Pink на Android</label>
+            </li>
+            <li class="form-content__attachment-item attachment-radio">
+              <input class="visuallu-hidden attachment-radio__input attachment-radio__input--state"
+                name="attachment-travel" id="windows" type="radio">
+              <label class="attachment-radio__label" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form-content__emotion">
+        <label class="form-content__emotion-label" for="emotion">опишите свои эмоции</label>
+        <textarea class="form-content__textarea" name="you-emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не
+          стесняясь в выражениях</textarea>
+      </div>
+      <button class="form-content__button" type="submit">отправить форму</button>
+    </form>
+    <p class="main-page__reference">&#42;&nbsp;&mdash;&nbsp;обязательные поля</p>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wraper">
