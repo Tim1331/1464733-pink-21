@@ -1,0 +1,39 @@
+.price {
+  background-color: @bg-grey;
+}
+
+.price {
+  &__table {
+    text-transform: uppercase;
+  }
+
+  &__table-header {
+    background-color: @base-color;
+
+  }
+
+  &__header-content:first-of-type {
+    color: @light;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__header-content:last-of-type {
+    color: @light;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__cell {
+    vertical-align: middle;
+    text-align: left;
+    background-color: @light;
+  }
+
+  &__content {
+    line-height: 30px;
+  }
+}
