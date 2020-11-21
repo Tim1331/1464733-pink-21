@@ -14,17 +14,17 @@
 
   &__header-content:first-of-type {
     color: @light;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
+    .weight(@seven-hundred);
+    .size(@sixteen);
+    .lh(@thirty);
+    .center;
   }
 
   &__header-content:last-of-type {
     color: @light;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
+    .size(@eighteen);
+    .lh(@thirty);
   }
 
   &__cell {
@@ -34,6 +34,6 @@
   }
 
   &__content {
-    line-height: 30px;
+    .lh(@thirty);
   }
 }

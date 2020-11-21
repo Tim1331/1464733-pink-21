@@ -1,10 +1,10 @@
 .quote {
   &__author {
     display: block;
-    text-align: center;
+    .center;
     color: @dark;
     font-weight: bold;
-    font-size: 18px;
+    .size(@eighteen);
     line-height: 30px;
     font-style: normal;
     margin-top: 45px;
@@ -15,8 +15,8 @@
   }
 
   &__text {
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
+    .weight(@four-hundred);
+    .lh(@thirty);
+    .center;
   }
 }
