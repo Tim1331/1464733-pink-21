@@ -1,0 +1,65 @@
+.form-content {
+  padding-top: 54px;
+}
+
+.form-content__full-name {
+  margin-top: 50px;
+  padding-bottom: 44px;
+}
+
+.form-content {
+
+  &__surname,
+  &__name,
+  &__patronymic,
+  &__phone,
+  &__mail {
+    color: @varnich;
+    .uppercase;
+    .lh(@thirty);
+
+  }
+
+  &__crazy-legend,
+  &__attachment-legend,
+  &__textarea-legend {
+    color: @varnich;
+    .uppercase;
+    .lh(@eighteen);
+  }
+
+  &__input-surname::placeholder,
+  &__input-name::placeholder,
+  &__input-patronymic::placeholder,
+  &__input-phone::placeholder,
+  &__input-mail::placeholder,
+  &__textarea {
+    color: @base-color;
+    .size(@eighteen);
+    .lh(@thirty);
+    padding-left: 20px;
+  }
+  &__textarea {
+    .center;
+  }
+}
+
+.form-content__crazy-travel,
+.form-content__attachment-travel {
+  border: 0;
+}
+
+.form-content__data {
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form-content__button {
+  margin-bottom: 46px;
+}
+
+.form-content__reference {
+  margin: 0;
+  .uppercase;
+  .lh(@thirty);
+}
