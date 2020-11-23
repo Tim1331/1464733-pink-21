@@ -1,48 +1,49 @@
-.form-content {
-  padding-top: 54px;
-}
-
 .form-content__full-name {
   margin-top: 50px;
   padding-bottom: 44px;
 }
 
+.form-content__surname,
+.form-content__name,
+.form-content__patronymic,
+.form-content__phone,
+.form-content__mail {
+  color: @varnich;
+  .uppercase;
+  .lh(@thirty);
+}
+
+.form-content__crazy-legend,
+.form-content__attachment-legend,
+.form-content__textarea-legend {
+  color: @varnich;
+  .uppercase;
+  .lh(@eighteen);
+}
+
 .form-content {
-
-  &__surname,
-  &__name,
-  &__patronymic,
-  &__phone,
-  &__mail {
-    color: @varnich;
-    .uppercase;
-    .lh(@thirty);
-
-  }
-
-  &__crazy-legend,
-  &__attachment-legend,
-  &__textarea-legend {
-    color: @varnich;
-    .uppercase;
-    .lh(@eighteen);
-  }
+  padding-top: 54px;
 
   &__input-surname::placeholder,
   &__input-name::placeholder,
   &__input-patronymic::placeholder,
   &__input-phone::placeholder,
-  &__input-mail::placeholder,
-  &__textarea {
+  &__input-mail::placeholder {
     color: @base-color;
     .size(@eighteen);
     .lh(@thirty);
     padding-left: 20px;
   }
-  &__textarea {
-    .center;
-  }
 }
+
+.form-content__textarea {
+  .center;
+  color: @base-color;
+  .size(@eighteen);
+  .lh(@thirty);
+  padding-left: 20px;
+}
+
 
 .form-content__crazy-travel,
 .form-content__attachment-travel {
