@@ -1,16 +1,13 @@
-.price {
-  background-color: @bg-grey;
+.price__table {
+  text-transform: uppercase;
+}
+
+.price__table-header {
+  background-color: @base-color;
 }
 
 .price {
-  &__table {
-    text-transform: uppercase;
-  }
-
-  &__table-header {
-    background-color: @base-color;
-
-  }
+  background-color: @bg-grey;
 
   &__header-content:first-of-type {
     color: @light;
@@ -26,14 +23,14 @@
     .size(@eighteen);
     .lh(@thirty);
   }
+}
 
-  &__cell {
-    vertical-align: middle;
-    text-align: left;
-    background-color: @light;
-  }
+.price__cell {
+  vertical-align: middle;
+  text-align: left;
+  background-color: @light;
+}
 
-  &__content {
-    .lh(@thirty);
-  }
+.price__content {
+  .lh(@thirty);
 }
