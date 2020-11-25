@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
+
 <head>
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,16 +18,16 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="#">главная</a>
+          <a class="site-list__link" href="#">главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">фотографии</a>
+          <a class="site-list__link" href="catalog.html">фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">конкурс</a>
+          <a class="site-list__link" href="form.html">конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="#">htmlacademy</a>
+          <a class="site-list__link" href="#">htmlacademy</a>
         </li>
       </ul>
     </nav>
@@ -51,11 +53,12 @@
                 комментарии свой совет и
                 смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!</p>
+              <div class="like-user">
+                <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
+                <span class="like-user__quantity">нравится:215</span>
+              </div>
             </blockquote>
-            <div class="like-user__block">
-              <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
-              <span class="like-user__quantity">нравится:215</span>
-            </div>
+
           </li>
           <li class="user-history__item">
             <div class="user-history__photo user-history__photo--label">
@@ -64,11 +67,11 @@
             <blockquote class="user-history__one">
               <cite class="user-history__cite"><span class="user-history__name">Левон</span> (5 часов назад)</cite>
               <p class="user-history__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="like-user">
+                <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
+                <span class="like-user__quantity">нравится:356</span>
+              </div>
             </blockquote>
-            <div class="like-user__block">
-              <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
-              <span class="like-user__quantity">нравится:356</span>
-            </div>
           </li>
           <li class="user-history__item">
             <div class="user-history__photo user-history__photo--label">
@@ -77,11 +80,11 @@
             <blockquote class="user-history__one">
               <cite class="user-history__cite"><span class="user-history__name">Антон</span> (12 часов назад)</cite>
               <p class="user-history__message">Соседи будут рады!</p>
+              <div class="like-user">
+                <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
+                <span class="like-user__quantity">нравится:666</span>
+              </div>
             </blockquote>
-            <div class="like-user__block">
-              <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
-              <span class="like-user__quantity">нравится:666</span>
-            </div>
           </li>
           <li class="user-history__item">
             <div class="user-history__photo user-history__photo--label">
@@ -91,7 +94,7 @@
               <cite class="user-history__cite"><span class="user-history__name">Борис</span> (20 часов назад)</cite>
               <p class="user-history__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
             </blockquote>
-            <div class="like-user__block">
+            <div class="like-user">
               <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
               <span class="like-user__quantity">нравится:215</span>
             </div>
@@ -103,11 +106,11 @@
             <blockquote class="user-history__one">
               <cite class="user-history__cite"><span class="user-history__name">Сергей</span> (25 часов назад)</cite>
               <p class="user-history__message">Самая кубанская в мире!</p>
+              <div class="like-user">
+                <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
+                <span class="like-user__quantity">нравится:4</span>
+              </div>
             </blockquote>
-            <div class="like-user__block">
-              <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
-              <span class="like-user__quantity">нравится:4</span>
-            </div>
           </li>
           <li class="user-history__item">
             <div class="user-history__photo user-history__photo--label">
@@ -116,11 +119,11 @@
             <blockquote class="user-history__one">
               <cite class="user-history__cite"><span class="user-history__name">Максим</span> (40 часов назад)</cite>
               <p class="user-history__message">Где снег-то?</p>
+              <div class="like-user">
+                <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
+                <span class="like-user__quantity">нравится:150</span>
+              </div>
             </blockquote>
-            <div class="like-user__block">
-              <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
-              <span class="like-user__quantity">нравится:150</span>
-            </div>
           </li>
           <li class="user-history__item">
             <div class="user-history__photo user-history__photo--label">
@@ -129,11 +132,11 @@
             <blockquote class="user-history__one">
               <cite class="user-history__cite"><span class="user-history__name">Надежда</span> (45 часов назад)</cite>
               <p class="user-history__message">Всем GM и взаимные лайки!</p>
+              <div class="like-user">
+                <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
+                <span class="like-user__quantity">нравится:2560</span>
+              </div>
             </blockquote>
-            <div class="like-user__block">
-              <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
-              <span class="like-user__quantity">нравится:2560</span>
-            </div>
           </li>
         </ul>
         <p class="photos-user__apple">Затмите их всех!</p>
@@ -165,7 +168,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wraper">
+    <div class="page-footer__wrapper">
       <a href="#" class="page-footer__logo">pink</a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -182,7 +185,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </div>
   </footer>
