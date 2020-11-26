@@ -1,7 +1,17 @@
 .advantages-list {
-  background-color: @bg-grey;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media(min-width: @tablet-width) {
+  .advantages-list {
+    position: absolute;
+    width: 310px;
+    right: 20px;
+  }
 }
 
 .advantages-list__item {
@@ -18,4 +28,5 @@
 
 .advantages-list__content {
   .lh(@twenty-four);
+  .center;
 }
