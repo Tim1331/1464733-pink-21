@@ -2,9 +2,10 @@
 <html class="page" lang="ru">
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,7 +15,7 @@
     </a>
     <button class="page-header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list main-nav__list--menu site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="#">главная</a>
         </li>
@@ -32,27 +33,29 @@
   </header>
   <main class="main-page">
     <h1 class="visually-hidden">Cервис PINK - взгляни на мир по-новому!</h1>
-    <section class="slogan">
-      <div class="slogan__wraper">
-        <h2 class="visually-hidden">Блок со слогоном!</h2>
-        <p class="slogan__leed">Взгляните на жизнь иначе!</p>
-      </div>
-    </section>
-    <section class="store">
-      <div class="store__wraper">
-        <h2 class="visually-hidden">Приложение под разные устройства!</h2>
-        <a href="#" class="store__install">Скачать приложение</a>
-        <a href="#" class="store__link" aria-label="Apple"></a>
-        <a href="#" class="store__link" aria-label="Android"></a>
-        <a href="#" class="store__link" aria-label="Microsoft"></a>
-        <p class="store__explanation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
+    <div class="main-page__header">
+      <section class="slogan">
+        <div class="slogan__wrapper">
+          <h2 class="visually-hidden">Блок со слогоном!</h2>
+          <p class="slogan__leed">Взгляните на жизнь иначе!</p>
+        </div>
+      </section>
+      <section class="store">
+        <div class="store__wrapper">
+          <h2 class="visually-hidden">Приложение под разные устройства!</h2>
+          <a href="#" class="store__install">Скачать приложение</a>
+          <a href="#" class="store__link" aria-label="Apple"></a>
+          <a href="#" class="store__link" aria-label="Android"></a>
+          <a href="#" class="store__link" aria-label="Microsoft"></a>
+          <p class="store__explanation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+    </div>
     <section class="features">
       <div class="features__wrapper">
         <h2 class="visually-hidden">Особенности и достоинства</h2>
         <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что Вам предложить!</p>
+        <p class="features__slogan">Нам есть, что вам предложить!</p>
         <ul class="advantages-list">
           <li class="advantages-list__item">
             <h3 class="advantages-list__header">Поднимает настроение</h3>
@@ -73,7 +76,7 @@
       </div>
     </section>
     <section class="quote">
-      <div class="quote__wraper">
+      <div class="quote__wrapper">
         <h2 class="visually-hidden">Cлайды цитат</h2>
         <cite class="quote__author">
           Николай Петров
@@ -151,8 +154,7 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Данные о контактах и карта</h2>
-        <p class="contacts__leed">Остались вопросы?
-          Свяжитесь с нами!</p>
+        <p class="contacts__leed">Остались вопросы?</p>
         <p class="contacts__leed">&nbsp;Свяжитесь с нами!</p>
         <dl class="contacts__list">
           <dt class="contacts__header">Звоните:</dt>
@@ -163,8 +165,8 @@
           <dd class="contacts__content">ул. Большая <br>
             Конюшенная, 19/8</dd>
         </dl>
-        <img src="https://via.placeholder.com/211*51" alt="Как до нас добраться" width="211" height="51">
       </div>
+      <img src="https://via.placeholder.com/211*51" alt="Как до нас добраться" width="211" height="51">
     </section>
   </main>
   <footer class="page-footer">

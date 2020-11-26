@@ -1,11 +1,11 @@
 .page-header {
   background-color: fade(@dark, 30%);
+  height: 66px;
 }
 
-.page-header__logo {
-  margin: 22px 0 21px 20px;
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+  }
 }
 
-.page-header__toogle {
-  margin: 21px 20px 21px 0;
-}

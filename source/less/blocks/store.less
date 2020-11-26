@@ -1,6 +1,21 @@
 .store {
-  background-color: @back-blue;
+  background-color: @asphalt;
   padding-top: 28px;
+  height: 243px;
+}
+
+@media(min-width: @tablet-width) {
+ .store {
+  background: transparent;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ }
+}
+
+.store__wrapper {
+  width: 280px;
 }
 
 .store__install {
@@ -14,10 +29,14 @@
   .weight(@seven-hundred);
   .size(@eighteen);
   .lh(@eighteen);
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  width: 300px;
 }
 
 .store__explanation {
-  .center;
   color: @light;
   .weight(@three-hundred);
   .lh(@twenty-four);
