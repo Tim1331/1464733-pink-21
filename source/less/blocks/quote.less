@@ -1,25 +1,71 @@
 .quote {
-background-color: @light;
+  background-color: @light;
+
+  &__data--existence {
+    display: block;
+    .weight(@four-hundred);
+    .size(@fourteen);
+    .lh(@thirty);
+    color: @base-color;
+  }
 }
+
+.quote__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .quote__author {
   display: block;
   .center;
   color: @dark;
-  font-weight: bold;
+  .weight(@seven-hundred);
   .size(@eighteen);
   line-height: 30px;
   font-style: normal;
   margin-top: 45px;
 }
 
-.quote {
-  &__data--existence {
-    display: none;
-  }
-}
-
 .quote__text {
   .weight(@four-hundred);
   .lh(@thirty);
   .center;
+}
+
+@media (min-width: @tablet-width) {
+  .quote__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+
+  .quote__author {
+    .size(@twenty-four);
+    order: 2;
+    .weight(@seven-hundred);
+  }
+
+  .quote__text {
+    .size(@eighteen);
+    .lh(@thirty);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .quote {
+    &__data--existence {
+      .size(@twenty-four);
+    }
+  }
+
+  .quote__wrapper {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
 }

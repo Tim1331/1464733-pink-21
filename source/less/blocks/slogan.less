@@ -1,41 +1,29 @@
 .slogan {
   background-color: @temporarily;
-  height: 462px;
-}
-
-@media (min-width: @tablet-width) {
-  .slogan {
-    background-color: transparent;
-    height: 378px;
-    outline: 2px solid green;
-    outline-offset: -2px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .slogan {
-    background-color: transparent;
-    outline: 2px solid green;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
 }
 
 .slogan__wrapper {
   width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
+  background-color: @temporarily;
+  height: inherit;
 }
 
 @media (min-width: @tablet-width) {
-  .slogan {
-    background-color: transparent;
-    outline: 2px solid green;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .slogan__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan__wrapper {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: inherit;
   }
 }
 
@@ -45,4 +33,33 @@
   .size(@twenty-four);
   .weight(@three-hundred);
   .lh(@twenty-nine);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 95px;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan__leed {
+    .center;
+    color: @light;
+    .size(@sixteen + @twenty-four);
+    .lh(@twenty-four + @twenty-four);
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    position: absolute;
+    top: 212px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan__leed {
+    .center;
+    color: @light;
+    .size(@twenty-five + @twenty-five);
+    .lh(@eighteen + 50);
+    position: absolute;
+    top: 224px;
+  }
 }

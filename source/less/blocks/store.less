@@ -1,22 +1,37 @@
 .store {
   background-color: @asphalt;
-  padding-top: 28px;
-  height: 243px;
-}
-
-@media(min-width: @tablet-width) {
- .store {
-  background: transparent;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
- }
+  height: 271px;
 }
 
 .store__wrapper {
   width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .store {
+    background: @temporarily;
+    height: 351px;
+  }
+
+  .store__wrapper {
+    background: @temporarily;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .store {
+    background: @temporarily;
+    height: 404px;
+  }
+
+  .store__wrapper {
+    background: @temporarily;
+    height: inherit;
+  }
+}
+
 
 .store__install {
   display: block;
@@ -29,15 +44,40 @@
   .weight(@seven-hundred);
   .size(@eighteen);
   .lh(@eighteen);
-  width: 280px;
+  width: 274px;
 }
 
 @media (min-width: @tablet-width) {
-  width: 300px;
+  .store__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .store__install {
+    width: 294px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .store__wrapper {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
 }
 
 .store__explanation {
   color: @light;
   .weight(@three-hundred);
   .lh(@twenty-four);
+  .center;
+}
+
+@media (min-width: @tablet-width) {
+  .store__explanation {
+    .size(@eighteen);
+    .lh(@twenty-four);
+    width: 300px;
+  }
 }

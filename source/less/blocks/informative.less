@@ -2,11 +2,11 @@
   display: none;
 }
 
-@media(min-width:@tablet-width) {
+@media (min-width: @tablet-width) {
   .informative {
     display: block;
     margin: 0 auto;
-    background-color: @bg-grey;
+    background-color: @light;
     height: 330px;
   }
 
@@ -38,18 +38,19 @@
   }
 }
 
-@media(min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
   .informative {
     display: block;
-    width: 1200px;
     height: 429px;
-    margin: 0 auto;
+    background-color: @bg-grey;
   }
 
   .informative__position {
     position: relative;
-    width: 1200px;
+    width: 940px;
     height: inherit;
+    margin: 0 auto;
+    background-color: @bg-grey;
   }
 
   .informative__content {

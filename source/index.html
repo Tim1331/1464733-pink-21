@@ -33,30 +33,28 @@
   </header>
   <main class="main-page">
     <h1 class="visually-hidden">Cервис PINK - взгляни на мир по-новому!</h1>
-    <div class="main-page__header">
-      <section class="slogan">
-        <div class="slogan__wrapper">
-          <h2 class="visually-hidden">Блок со слогоном!</h2>
-          <p class="slogan__leed">Взгляните на жизнь иначе!</p>
-        </div>
-      </section>
-      <section class="store">
-        <div class="store__wrapper">
-          <h2 class="visually-hidden">Приложение под разные устройства!</h2>
-          <a href="#" class="store__install">Скачать приложение</a>
-          <a href="#" class="store__link" aria-label="Apple"></a>
-          <a href="#" class="store__link" aria-label="Android"></a>
-          <a href="#" class="store__link" aria-label="Microsoft"></a>
-          <p class="store__explanation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
-    </div>
+    <section class="main-page__slogan slogan">
+      <div class="slogan__wrapper">
+        <h2 class="visually-hidden">Блок со слогоном!</h2>
+        <p class="slogan__leed">Взгляните на жизнь иначе!</p>
+      </div>
+    </section>
+    <section class="store">
+      <div class="store__wrapper">
+        <h2 class="visually-hidden">Приложение под разные устройства!</h2>
+        <a href="#" class="store__install">Скачать приложение</a>
+        <a href="#" class="store__link" aria-label="Apple"></a>
+        <a href="#" class="store__link" aria-label="Android"></a>
+        <a href="#" class="store__link" aria-label="Microsoft"></a>
+        <p class="store__explanation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
     <section class="features">
       <div class="features__wrapper">
         <h2 class="visually-hidden">Особенности и достоинства</h2>
         <p class="features__slogan">Устали от серости мегаполиса?</p>
         <p class="features__slogan">Нам есть, что вам предложить!</p>
-        <ul class="advantages-list">
+        <ul class="features__list advantages-list">
           <li class="advantages-list__item">
             <h3 class="advantages-list__header">Поднимает настроение</h3>
             <p class="advantages-list__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
@@ -108,6 +106,9 @@
         <h2 class="visually-hidden">Прайс на услуги</h2>
         <table class="price__table">
           <tr>
+            <th class="price__table-header price__table-header--">
+              &nbsp;
+            </th>
             <th class="price__table-header">
               <span class="price__header-content">база</span>
               <span class="price__header-content">1.99 USD</span>
@@ -122,17 +123,23 @@
             </th>
           </tr>
           <tr>
-            <td class="price__cell price__cell--icon">
-              <span class="price__content price__content--presence">розовый фильтр</span>
+            <td class="price__cell price__cell--hidden">
+              <span class="price__content">Розовый фильтр</span>
             </td>
             <td class="price__cell price__cell--icon">
               <span class="price__content price__content--presence">розовый фильтр</span>
             </td>
             <td class="price__cell price__cell--icon">
               <span class="price__content price__content--presence">розовый фильтр</span>
+            </td>
+            <td class="price__cell price__cell--icon">
+              <span class="price__con price__content--presence">розовый фильтр</span>
             </td>
           </tr>
           <tr>
+            <td class="price__tentcell price__cell--hidden">
+              <span class="price__content">Смайлики</span>
+            </td>
             <td class="price__cell price__cell--icon">
               <span class="price__content price__content--presence">смайлики</span>
             </td>
@@ -144,6 +151,9 @@
             </td>
           </tr>
           <tr>
+            <td class="price__cell price__cell--hidden">
+              <span class="price__content">Комментарии</span>
+            </td>
             <td class="price__cell price__cell--icon">
               <span class="price__content price__content--presence">комментарии</span>
             </td>
@@ -177,7 +187,8 @@
             Конюшенная, 19/8</dd>
         </dl>
       </div>
-      <img src="https://via.placeholder.com/211*51" alt="Как до нас добраться" width="211" height="51">
+      <img class="contacts__map" src="https://via.placeholder.com/211*51" alt="Как до нас добраться" width="211"
+        height="51">
     </section>
   </main>
   <footer class="page-footer">
