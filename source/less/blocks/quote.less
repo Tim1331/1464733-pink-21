@@ -7,16 +7,22 @@
     .size(@fourteen);
     .lh(@thirty);
     color: @base-color;
+
+    @media (min-width: @desktop-width) {
+      .size(@twenty-four);
+    }
   }
 }
 
 .quote__wrapper {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
+  .wrapper;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .quote__author {
@@ -28,44 +34,20 @@
   line-height: 30px;
   font-style: normal;
   margin-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    .size(@twenty-four);
+    order: 2;
+  }
 }
 
 .quote__text {
   .weight(@four-hundred);
   .lh(@thirty);
   .center;
-}
 
-@media (min-width: @tablet-width) {
-  .quote__wrapper {
-    width: 620px;
-    padding: 0 20px;
-    margin: 0 auto;
-    justify-content: flex-start;
-  }
-
-  .quote__author {
-    .size(@twenty-four);
-    order: 2;
-    .weight(@seven-hundred);
-  }
-
-  .quote__text {
+  @media (min-width: @tablet-width) {
     .size(@eighteen);
     .lh(@thirty);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .quote {
-    &__data--existence {
-      .size(@twenty-four);
-    }
-  }
-
-  .quote__wrapper {
-    width: 940px;
-    padding: 0 10px;
-    margin: 0 auto;
   }
 }

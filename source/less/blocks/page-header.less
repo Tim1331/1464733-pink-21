@@ -1,17 +1,16 @@
 .page-header {
-  background-color: fade(@dark, 30%);
-  height: 66px;
-}
+  background-color: @base-color;
+  display: flex;
+  flex-direction: column;
 
-@media (min-width: @tablet-width) {
-  .page-header {
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     height: 110px;
-    background-color: fade(@dark, 30%);
   }
 }
 
-@media (min-width: @desktop-width) {
-  .page-header {
-    background-color: fade(@dark, 30%);
-  }
+.page-header__toogle {
+  display: none;
 }

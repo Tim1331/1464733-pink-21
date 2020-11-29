@@ -1,78 +1,72 @@
 .informative {
   display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .informative {
+  @media (min-width: @tablet-width) {
     display: block;
-    margin: 0 auto;
     background-color: @light;
     height: 330px;
   }
 
-  .informative__position {
-    position: relative;
-    width: 660px;
+  @media (min-width: @desktop-width) {
+    height: 429px;
+    background-color: @bg-grey;
+  }
+}
+
+.informative__wrapper {
+  @media (min-width: @tablet-width) {
     height: inherit;
+    display: grid;
+    grid-template-columns: 320px 320px;
   }
 
-  .informative__content {
-    position: absolute;
-    right: 20px;
-    width: 310px;
+  @media (min-width: @desktop-width) {
+    .wrapper;
+    background-color: @bg-grey;
+    grid-template-columns: 369px 591px;
   }
+}
 
-  .informative__header {
+.informative__content {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.informative__header {
+  @media (min-width: @tablet-width) {
     .size(@thirty);
     .lh(@thirty + 3);
     .weight(@seven-hundred);
   }
 
-  .informative__news {
-    .lh(@twenty-four);
-  }
-
-  .informative__link {
-    .lh(@twenty-four);
-    color: @varnich;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .informative {
-    display: block;
-    height: 429px;
-    background-color: @bg-grey;
-  }
-
-  .informative__position {
-    position: relative;
-    width: 940px;
-    height: inherit;
-    margin: 0 auto;
-    background-color: @bg-grey;
-  }
-
-  .informative__content {
-    position: absolute;
-    right: 130px;
-    width: 534px;
-  }
-
-  .informative__header {
+  @media (min-width: @desktop-width) {
     .size(@thirty);
     .lh(@thirty);
     .weight(@seven-hundred);
   }
+}
 
-  .informative__news {
+.informative__news {
+  @media (min-width: @tablet-width) {
+    .lh(@twenty-four);
+  }
+
+  @media (min-width: @desktop-width) {
     .size(@eighteen);
     .lh(@thirty);
   }
+}
 
-  .informative__link {
+.informative__link {
+  @media (min-width: @tablet-width) {
+    .lh(@twenty-four);
+    color: @varnich;
+  }
+
+  @media (min-width: @desktop-width) {
     .size(@eighteen);
     .lh(@thirty);
-    color: @varnich;
   }
 }

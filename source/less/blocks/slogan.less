@@ -1,31 +1,19 @@
 .slogan {
   background-color: @temporarily;
+
+  @media (min-width: @tablet-width) {
+    .wrapper;
+  }
 }
+
 
 .slogan__wrapper {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
+  .wrapper;
   background-color: @temporarily;
   height: inherit;
+  position: relative;
 }
 
-@media (min-width: @tablet-width) {
-  .slogan__wrapper {
-    width: 620px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .slogan__wrapper {
-    width: 940px;
-    padding: 0 10px;
-    margin: 0 auto;
-    height: inherit;
-  }
-}
 
 .slogan__leed {
   color: @light;
@@ -36,30 +24,19 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 95px;
-}
+  top: 29px;
 
-@media (min-width: @tablet-width) {
-  .slogan__leed {
-    .center;
-    color: @light;
+  @media (min-width: @tablet-width) {
     .size(@sixteen + @twenty-four);
     .lh(@twenty-four + @twenty-four);
-    margin: 0;
-    padding: 0;
     width: 300px;
     position: absolute;
-    top: 212px;
+    top: 102px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .slogan__leed {
-    .center;
-    color: @light;
+  @media (min-width: @desktop-width) {
     .size(@twenty-five + @twenty-five);
     .lh(@eighteen + 50);
-    position: absolute;
-    top: 224px;
+    top: 114px;
   }
 }
