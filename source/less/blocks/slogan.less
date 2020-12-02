@@ -6,14 +6,21 @@
   }
 }
 
-
 .slogan__wrapper {
   .wrapper;
   background-color: @temporarily;
   height: inherit;
-  position: relative;
-}
 
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 10px;
+  }
+}
 
 .slogan__leed {
   color: @light;
@@ -23,15 +30,13 @@
   .lh(@twenty-nine);
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: 29px;
 
   @media (min-width: @tablet-width) {
     .size(@sixteen + @twenty-four);
     .lh(@twenty-four + @twenty-four);
     width: 300px;
-    position: absolute;
-    top: 102px;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   @media (min-width: @desktop-width) {
