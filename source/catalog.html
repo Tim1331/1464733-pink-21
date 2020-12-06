@@ -12,22 +12,22 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo page-header__logo--extra-logo" href="#">
-      <img src="https://via.placeholder.com/74*23" width="74" height="23" alt="Сайт сервиса «pink»">
+      <img src="img/logo.svg" width="147" height="40" alt="Сайт сервиса «pink»">
     </a>
     <button class="page-header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="#">главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">фотографии</a>
+          <a class="site-list__link" href="catalog.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">htmlacademy</a>
+          <a class="site-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -35,18 +35,24 @@
   <main class="main-page">
     <h1 class="visually-hidden">Cервис PINK - взгляни на мир по-новому!</h1>
     <section class="slogan-header">
+      <h2 class="visually-hidden">фотографии пользователей</h2>
       <p class="slogan-header__slogan">Фотографии пользователей</p>
     </section>
-    <section class="photos-user">
-      <div class="photos-user__wrapper user-history">
-        <h2 class="visually-hidden">Блок с фотографиями пользователей</h2>
+    <section class="block-offer">
+      <div class="block-offer__wrapper">
         <p class="photos-user__apple">Взгляните на фотографии, которые выкладывают пользователи!</p>
         <p class="photos-user__apple">Видите, как не хватает ваших?</p>
+      </div>
+    </section>
+    <section class="block-image">
+      <h2 class="visually-hidden">Блок с панарамным изображением</h2>
+      <img src="https://via.placeholder.com/320*137" alt="Панарамная фотография">
+    </section>
+    <section class="photos-user">
+      <h2 class="visually-hidden">Блок с фотографиями пользователей</h2>
+      <div class="photos-user__wrapper user-history">
         <ul class="user-history__list">
           <li class="user-history__item">
-            <div class="user-history__photo user-history__photo--label">
-              <img src="https://via.placeholder.com/320*137" alt="Панарамное фотография">
-            </div>
             <blockquote class="user-history__one">
               <cite class="user-history__cite"><span class="user-history__name">Анна</span> (5 минут назад)</cite>
               <p class="user-history__message">Прыгать или нет? Напишите в
@@ -58,7 +64,6 @@
                 <span class="like-user__quantity">нравится:215</span>
               </div>
             </blockquote>
-
           </li>
           <li class="user-history__item">
             <div class="user-history__photo user-history__photo--label">
@@ -83,7 +88,6 @@
               <div class="like-user">
                 <a href="#" class="like-user__icon"><span class="visually-hidden">Лайкнуть</span></a>
                 <span class="like-user__quantity">нравится:666</span>
-              </div>
             </blockquote>
           </li>
           <li class="user-history__item">
@@ -144,6 +148,7 @@
       </div>
     </section>
     <section class="photo-filter">
+      <h2 class="visually-hidden">Блок с фильтром</h2>
       <div class="photo-filter__wrapper filter-elements">
         <div class="filter-elements__block">
           <img src="https://via.placeholder.com/280*374" alt="Зима" width="280" height="374">
