@@ -18,10 +18,14 @@
 
   @media (min-width: @tablet-width) {
     background: @temporarily;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
     height: inherit;
+    width: 940px;
+    padding: 0 10px;
   }
 }
 
@@ -40,6 +44,17 @@
 
   @media (min-width: @tablet-width) {
     width: 294px;
+    height: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+
+.store__link {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
@@ -53,5 +68,7 @@
     .size(@eighteen);
     .lh(@twenty-four);
     width: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
