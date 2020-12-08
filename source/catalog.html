@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -150,24 +149,40 @@
     <section class="photo-filter">
       <h2 class="visually-hidden">Блок с фильтром</h2>
       <div class="photo-filter__wrapper filter-elements">
-        <div class="filter-elements__block">
+        <div class="filter-elements-image">
           <img src="https://via.placeholder.com/280*374" alt="Зима" width="280" height="374">
-          <div class="filter-elements__icon">
-            <a href="#" class="filter-elements__crop filter-elements__crop--active"></a>
-            <a href="#" class="filter-elements__fill"></a>
-            <a href="#" class="filter-elements__contrast"></a>
-          </div>
-          <div class="filter-elements__range">
-            <div class="filter-elements__scale">
-              <div class="filter-elements__bar"></div>
-            </div>
-            <div class="filter-elements__toggle filter-elements__toggle--active" tabindex="0"
-              aria-label="элемент выбора"></div>
-          </div>
         </div>
-        <div class="filter-button">
-          <button class="filter-button__post filter-button__post--active" type="button">Запостить</button>
-          <button class="filter-button__canceling" type="button">Отмена</button>
+        <div class="photo-filter__block">
+          <div class="photo-filter__icon">
+            <a href="#" class="photo-filter__crop filter-elements__crop--active"></a>
+            <a href="#" class="photo-filter__fill"></a>
+            <a href="#" class="photo-filter__contrast"></a>
+          </div>
+          <div class="photo-filter__range">
+            <div class="photo-filter__scale">
+              <div class="photo-filter__bar"></div>
+            </div>
+            <div class="photo-filter__toggle filter-elements__toggle--active" tabindex="0" aria-label="элемент выбора">
+            </div>
+          </div>
+          <div class="photo-filter__range">
+            <div class="photo-filter__scale">
+              <div class="photo-filter__bar"></div>
+            </div>
+            <div class="photo-filter__toggle filter-elements__toggle--active" tabindex="0" aria-label="элемент выбора">
+            </div>
+          </div>
+          <div class="photo-filter__range">
+            <div class="photo-filter__scale">
+              <div class="photo-filter__bar"></div>
+            </div>
+            <div class="photo-filter__toggle photo-filter__toggle--active" tabindex="0" aria-label="элемент выбора">
+            </div>
+          </div>
+          <div class="photo-filter">
+            <button class="photo-filter__post photo-filter__post--active" type="button">Запостить</button>
+            <button class="photo-filter__canceling" type="button">Отмена</button>
+          </div>
         </div>
       </div>
     </section>
