@@ -1,6 +1,10 @@
 .quote {
   background-color: @light;
 
+  @media (min-width: @tablet-width) {
+    height: 343px;
+  }
+
   &__data--existence {
     display: none;
     .weight(@four-hundred);
