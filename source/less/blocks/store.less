@@ -1,18 +1,18 @@
 .store {
-  background-color: @asphalt;
   height: 243px;
   padding-top: 28px;
   padding-left: 20px;
+  background-color: @asphalt;
 
   @media (min-width: @tablet-width) {
-    background: @temporarily;
     height: 351px;
     margin-top: -371px;
+    background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
-    background: @temporarily;
     height: 406px;
+    background-color: transparent;
   }
 }
 
@@ -20,7 +20,6 @@
   .wrapper;
 
   @media (min-width: @tablet-width) {
-    background: @temporarily;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -55,7 +54,7 @@
 
   @media (min-width: @desktop-width) {
     .size(@thirty-three - @twelve);
-    height: 17px;
+    height: 18px;
     margin-left: -10px;
     color: @light;
     padding: 16px 36px 16px 35px;
@@ -94,7 +93,7 @@
     display: inline-block;
     width: 47px;
     height: 56px;
-    background-image: url(../img/apple-link.svg);
+    background-image: url("../img/apple-link.svg");
     margin-left: 38px;
     margin-right: 32px;
     margin-top: 32px;
@@ -114,7 +113,7 @@
     display: inline-block;
     width: 43px;
     height: 47px;
-    background-image: url(../img/android-link.svg);
+    background-image: url("../img/android-link.svg");
     margin-top: -45px;
     margin-left: -1px;
     vertical-align: middle;
@@ -135,7 +134,7 @@
     display: inline-block;
     width: 44px;
     height: 41px;
-    background-image: url(../img/microsoft-link.svg);
+    background-image: url("../img/microsoft-link.svg");
     margin-left: 32px;
     margin-top: -39px;
     vertical-align: middle;
@@ -176,11 +175,10 @@
     grid-column-end: 2;
     margin-top: 32px;
     padding-left: 0;
-
   }
 
   @media (min-width: @desktop-width) {
     margin-top: -117px;
-    margin-left: -10px
+    margin-left: -10px;
   }
 }
