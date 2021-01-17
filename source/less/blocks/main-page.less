@@ -1,13 +1,61 @@
 .main-page__slogan {
-  height: 462px;
-  background-color: @temporarily;
+  height: 373px;
+  padding-top: 87px;
+  margin-top: -66px;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
-    height: 378px;
+    height: 517px;
+    padding-top: 203px;
+    margin-top: -115px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 449px;
+    height: 582px;
+    padding-top: 214px;
+  }
+}
+
+.main-page {
+  @media (min-width: @mobile-width-only) {
+    background-image: url("../img/screenmobile.jpg"), url("../img/phonemobile.png"), url("../img/backmobile.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 104px 207px, 0 174px, 0 0;
+    background-size: auto auto, auto auto, auto auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screenmobile@2x.jpg"), url("../img/phonemobile@2x.png"), url("../img/backmobile@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 104px 207px, 0 174px, 0 0;
+      background-size: 111px 196px, 320px 286px, auto 460px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/backtablet.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 372px 238px, -108px 183px, 0 0;
+    background-size: 193px 344px, 884px 545px, auto auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgscreen@2x.jpg"), url("../img/phone@2x.png"), url("../img/backtablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 372px 238px, -108px 183px, 0 0;
+      background-size: 193px 344px, 884px 545px, 660px 728px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/bgimg.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 718px 277px, 147px 213px, 0 0;
+    background-size: 228px 407px, 1049px 645px, 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgscreen@2x.jpg"), url("../img/phone@2x.png"), url("../img/bgimg@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 717px 278px, 151px 213px, 0 0;
+      background-size: 228px 406px, 1042px 645px, 1196px 858px;
+    }
   }
 }

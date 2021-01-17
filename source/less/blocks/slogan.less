@@ -1,14 +1,9 @@
 .slogan {
-  background-color: @temporarily;
-
-  @media (min-width: @tablet-width) {
-    .wrapper;
-  }
+  background-color: none;
 }
 
 .slogan__wrapper {
   .wrapper;
-  background-color: @temporarily;
   height: inherit;
 
   @media (min-width: @tablet-width) {
@@ -28,20 +23,22 @@
   .size(@twenty-four);
   .weight(@three-hundred);
   .lh(@twenty-nine);
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     .size(@sixteen + @twenty-four);
     .lh(@twenty-four + @twenty-four);
-    width: 300px;
+    width: 188px;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding: 0 55px;
   }
 
   @media (min-width: @desktop-width) {
     .size(@twenty-five + @twenty-five);
     .lh(@eighteen + 50);
-    top: 114px;
+    width: 260px;
+    padding: 0;
   }
 }
